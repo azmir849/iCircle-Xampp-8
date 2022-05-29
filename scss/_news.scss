@@ -1,0 +1,83 @@
+.news{
+    padding: 130px 0;
+    background-color: $bg;
+    margin-top: 130px; 
+    .section_header{
+        padding-top: 13px;
+         h4{
+            font-size: 48px;
+            font-weight: 700;
+            color: $black;
+            line-height: 56px;
+            text-transform: uppercase;
+            span{
+                color: $primaryColor;
+            }
+         }
+         p{
+            font-size: 16px;
+            font-weight: 400;
+            color: $text;
+            line-height: 26px;
+           padding: 30px 250px;
+         }
+    }
+    .news_wrapper{
+        padding-top: 65px;
+           .news_wrap{
+               background-color: $white;
+               box-shadow: 1px 1.732px 10px 0px #2424244d;
+               padding: 30px 30px;
+               border-radius: 10px;
+          .news_img{
+             img{
+                 width: 100%;
+                 border-radius: 10px;
+             }
+         }
+
+         .img_info{
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             margin-top: -10px;
+               h4{
+                font-size: 14px;
+                font-weight: 400;
+                color: $text;
+                font-family: $font2;
+                   span{
+                      img{
+                          width: 50px;
+                      }
+                   }
+               }
+         }
+         .news_text{
+               
+               h5{
+                   font-size: 22px;
+                   font-weight: 500;
+                   color: $black;
+                   padding: 15px 0 10px 0;
+                   line-height: 32px;
+               }
+               p{
+                font-size: 16px;
+                font-weight: 400;
+                font-family: $font2;
+                color: $text;
+                padding: 10px 0;
+            }
+            a{
+                font-size: 18px;
+                font-weight: 500;
+                color: $primaryColor;
+                &:hover{
+                    padding-left: 20px;
+                }
+            }
+         }
+           }
+    }
+}

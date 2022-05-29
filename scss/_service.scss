@@ -1,0 +1,50 @@
+.service{
+    padding: 130px 0;
+    background-color: $bg; 
+    .service_head{
+        h4{
+            color: $primaryColor;
+            font-size: 24px;
+            font-weight:700;
+            text-transform: uppercase;
+        }
+        h5{
+            color: $black;
+            font-size: 35px;
+            font-weight:700;
+            padding-top: 25px;
+        }
+    }
+    .service_wrapper{
+        padding-top: 40px;
+        .service_item{
+            background-color: $white;
+            padding: 65px 30px 30px 30px;
+             border: 1px solid transparent;
+             box-shadow: 1px 1.732px 10px 0px #0000004d;
+             border-radius: 10px;
+             -webkit-border-radius: 10px;
+             -moz-border-radius: 10px;
+             -ms-border-radius: 10px;
+             -o-border-radius: 10px;
+             margin-top: 40px;
+          &:hover{
+              border: 1px solid $primaryColor;
+          }
+            h3{
+                color: $black;
+                font-size: 24px;
+                font-weight:600;
+                padding-top: 30px ;
+            }
+             p{
+                color: $black;
+                font-size: 16px;
+                font-weight:400;
+                line-height: 24px;
+                color: $text; 
+                padding-top: 17px;
+            }
+        }
+    }
+}

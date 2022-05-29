@@ -1,0 +1,129 @@
+.client{
+    padding: 130px 0;
+    .section_header{
+        padding-top: 13px;
+         h4{
+            font-size: 48px;
+            font-weight: 700;
+            color: $black;
+            line-height: 56px;
+            text-transform: uppercase;
+            span{
+                color: $primaryColor;
+            }
+         }
+         p{
+            font-size: 16px;
+            font-weight: 400;
+            color: $text;
+            line-height: 26px;
+            padding: 30px 250px;
+         }
+    }
+    .client_wrapper{
+        position: relative;
+        .img_eliment{
+            .img_1{
+                position: absolute;
+                left: 0;
+                bottom:  30%;
+                img{
+                   border-radius: 50%;
+                }
+            }
+            .img_2{
+                position: absolute;
+                left: 10%;
+                top:  20%;
+                img{
+                   border-radius: 50%;
+                }
+            }
+            .img_4{
+                position: absolute;
+                left: 20%;
+                top:  15%;
+            }
+            .img_5{
+                position: absolute;
+                right: 0;
+                bottom:  30%;
+            }
+            .img_6{
+                position: absolute;
+                right: 10%;
+                top:  20%;
+                img{
+                   border-radius: 50%;
+                }
+            }
+            .img_7{
+                position: absolute;
+                right: 0;
+                top:  0;
+            }
+            .img_8{
+                position: absolute;
+                right: 20%;
+                top:  15%;
+            }
+        }
+           .client_wrap{
+                 .slider_item{
+                     .text_item{
+                         padding: 30px 40px;
+                         box-shadow: 1px 1.732px 10px 0px #0000004d;
+                         position: relative;
+                         z-index: 1;
+                         margin: 10px;
+                        p{
+                            font-size: 16px;
+                            color: $text;
+                            font-family: $font2;
+                            line-height: 26px;
+                            padding: 10px 0;
+                        }
+                        // &::before{
+                        //     position: absolute;
+                        //     content: '';
+                        //     height: 60px;
+                        //     width: 60px;
+                        //     background-color: $white;
+                        //     bottom: -30px;
+                        //     left: 50%;
+                        //     transform: translateX(-50%) rotate(45deg);
+                        //     box-shadow: 1px 1.732px 10px 0px #0000004d;
+                        //     z-index: -1;
+                        // }
+                     }
+                     .client_profile{
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+                         padding-top: 80px;
+                           .profile_img{
+                                img{
+                                    border-radius: 50%;
+                                }
+                           }
+                           .client_info{
+                               padding-left: 20px;
+                                 h4{
+                                    font-size: 24px;
+                                    color: $black;
+                                    text-transform: uppercase;
+                                    font-weight: 500;
+                                 }
+                                 h5{
+                                    font-size: 19px;
+                                    color: $primaryColor;
+                                    font-family: $font2;
+                                    line-height: 28px;
+                                    font-weight: 400;
+                                 }
+                           }
+                     }
+                 }
+           }
+    }
+}

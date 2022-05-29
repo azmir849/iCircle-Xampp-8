@@ -1,0 +1,44 @@
+.navbar_toggoler{
+    .offcanvas {
+        .offcanvas-header{
+            img{
+                width: 60px; 
+            }
+        }
+        .offcanvas-body{ 
+            background-color: $white;  
+            .nav_list{
+                .dropdown {
+                    margin: 1em auto;
+                    width: 100%;
+                    border: .1em solid #c0cdd1;
+                  }
+                  a {
+                    display: block;
+                    padding: 5px 10px;
+                    color: #000;
+                    font-size: 15px;
+                    font-weight: 400;
+                    &:focus,
+                    &:hover {background: #ecf0f1;}
+                    &:active {background: #fbfcfc;}
+                  }
+                  .fa {float: right}
+                  ul {
+                    display: none;
+                    border-top: .1em solid #c0cdd1;
+                  }
+                  li {
+                    padding: 5px 10px;
+                    cursor: pointer;
+                    &:not(:first-child){
+                      border-top: .1em dashed #dde4e6;
+                    }
+                    &:focus,
+                    &:hover {background: #ecf0f1;}
+                    &:active {background: #fbfcfc;}
+                  }      
+            }
+        }
+    }
+}

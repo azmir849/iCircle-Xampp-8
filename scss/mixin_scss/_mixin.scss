@@ -1,0 +1,12 @@
+@mixin button{
+    padding: 13px 25px;
+    background-color: $primaryColor;
+    border-radius:5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: $white;
+    font-family: $font1;
+    &:hover{
+        background-color: $black;
+    }
+}

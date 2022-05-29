@@ -1,0 +1,72 @@
+/*<><><><><><><<><><><><><<><><><><>
+
+Template Name: TONY OBER
+Template URL : 
+Description  : 
+Author       : Fahim Ahmed
+Author URL   :
+Version      : 1.1.1
+
+<><><><><><><<><><><><><<><><><><>*/
+
+/*----------------------------------
+       HTML  INDEX LIST
+
+01. Header 
+02. MObHeader
+03. HOMe
+04. Resume
+05. SideBar
+06. Skill
+07. Service
+08. Client
+09. Language
+10. POrtfolio
+11. News
+12. Appointment
+14. Award
+15. Contact
+16. Footer
+17. NavOffcan
+18. BackToTop
+
+
+-------------------------------------*/
+
+/*     Google Font Connections
+-------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+/*      SCSS Pages Connections 
+<><><><<><<><><<><><><><><><<><><><>*/
+
+@import "../scss/common_css/common";
+
+@import "../scss/mixin_scss/mixin";
+
+@import "../scss/variable_scss/variable";
+
+
+
+/*     SCSS Sections Connections 
+<><><><<><<><><<><><><><><><<><><><>*/
+
+@import "../scss/header";
+@import "../scss/mobHeader";
+@import "../scss/home";
+@import "../scss/about";
+@import "../scss/resume";
+@import "../scss/skill";
+@import "../scss/service";
+@import "../scss/client";
+@import "../scss/language";
+@import "../scss/portfolio";
+@import "../scss/news";
+@import "../scss/appointment";
+@import "../scss/award";
+@import "../scss/contact";
+@import "../scss/footer";
+@import "../scss/navOffcan";
+@import "../scss/backtoTop";
+
+

@@ -1,0 +1,148 @@
+.skill{
+    padding: 130px 0;
+    .skill_wrapper{
+    .skill_image{
+         height: 90%;
+         width: 90%;
+         background-color: #95f9f684;
+         border-radius: 50%;
+         position: relative;
+         top: 50%;
+         left:0;
+         transform: translateY(-50%);
+         .skill_play{
+            height: 130px;
+            width: 130px;
+            background: linear-gradient(to right, #92f6f2 0%, #227c78 100%);
+            border-radius: 50%;
+            text-align: center;
+            position: relative;
+            box-shadow: 1px 1.732px 10px 0px #0000004d;
+            position: absolute;
+            left: 15%;
+            top: 10%;
+            z-index: 99;
+             a{
+                i{
+                    font-size: 50px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    color: $white;
+                }
+             }
+         }
+         .skill_img1{
+             position: relative;
+             top: 30%;
+             left: 0;
+             img{
+                 width: 100%;
+                 border-top-right-radius: 35px;
+                 border-bottom-left-radius: 35px;
+             }
+         }
+         .skill_img2{
+            position: relative;
+            top: 10%;
+            left: -40%;
+            z-index: -1;
+            img{
+                width: 140%;
+                border-top-right-radius: 35px;
+                border-bottom-left-radius: 35px;
+            }
+        }
+
+    }
+        .skill_content{
+            span{
+                color: $primaryColor;
+                font-size: 24px;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+            h4{
+                color: $black;
+                font-size: 36px;
+                font-weight: 700;
+                padding: 35px 0 40px 0; 
+                line-height: 48px;
+            }
+            p{
+                color: $text;
+                font-size: 16px;
+                line-height: 24px;
+               }
+               .progress_wrapeer{
+                   display: flex;
+                   justify-content: space-between;
+                   align-items: center;
+                   padding: 23px 0 20px 0;
+                   h6{
+                       display: inline-block;
+                       font-size: 20px;
+                       font-weight: 600;
+                       color: $black;
+                   }
+                   a{
+                    display: inline-block;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $primaryColor;
+                }
+               }
+               .progress {
+                background: #b8e0e0;
+                justify-content: flex-start;
+                border-radius: 100px;
+                align-items: center;
+                position: relative;
+                padding: 0 2px;
+                display: flex;
+                height: 17px;
+                width: 100%;
+                position: relative;
+
+                .progress-value {
+                    animation: load 3s normal forwards;
+                    box-shadow: 0 10px 40px -10px #fff;
+                    border-radius: 100px;
+                    background: $primaryColor;
+                    height: 15px;
+                    width: 0;
+                  }
+                  .value_2{
+                    animation: load2 3s normal forwards;
+                    -webkit-animation: load2 3s normal forwards;
+}
+                  .value_3{
+                    animation: load3 3s normal forwards;
+                    -webkit-animation: load3 3s normal forwards;
+}
+                .value_4{
+                    animation: load4 3s normal forwards;
+                    -webkit-animation: load4 3s normal forwards; 
+}
+              }
+        }
+    }
+}
+
+@keyframes load{
+    0% { width: 0; }
+    100% { width: 90%; }
+  }
+  @keyframes load2{
+    0% { width: 0; }
+    100% { width: 95%; }
+  }
+  @keyframes load3{
+    0% { width: 0; } 
+    100% { width: 85%; }
+  }
+  @keyframes load4{
+    0% { width: 0; }
+    100% { width: 80%; }
+  }

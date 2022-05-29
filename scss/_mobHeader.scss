@@ -1,0 +1,21 @@
+.mob_header{
+    padding: 10px 0;
+    background-color: $white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    animation: mobHeader .9s;
+    box-shadow: 1px 1.732px 10px 1px #2424244d;
+    .moble_navbar{
+         font-size: 30px;
+         color: $primaryColor;
+         padding: 9px 13px;
+         border: 1px solid $primaryColor;
+         border-radius: 10px;
+    }
+}
+@keyframes mobHeader { 
+    0%   {top: -50px;}
+    100% {top: 0px;}
+}

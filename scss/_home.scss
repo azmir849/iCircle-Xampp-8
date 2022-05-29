@@ -1,0 +1,126 @@
+.Home{
+    .home_wrapper{
+        background-image: url(../images/home.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        height: 80vh;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        &::after{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0,0,0,0.5);
+            z-index: -1;
+        }
+    }
+    .home_content{
+             padding: 0 60px 35px 60px;
+             background-color: $white;
+             box-shadow: 1px 1.732px 20px 0px #0000004d;
+             border-top-right-radius: 120px;
+             border-bottom-left-radius: 110px;
+             position: relative;
+             margin-top: -160px;
+             z-index: 2;
+        .content_top{
+            border-bottom: 1px solid #afaeae;
+              .content_wrap{
+                  padding: 30px 0;
+                  .profile{
+                       position: relative;
+                       margin-top: -200px;
+                       padding-right: 50px;
+                      img{
+                          border-radius: 5px;
+                      }
+                  }
+                  .profile_description{
+                      border-right: 1px solid #aaa8a8;
+                      padding-right: 50px;
+                      padding-top: 20px;
+                      h4{
+                          font-size: 48px;
+                          color: $black;
+                          font-weight: 600;
+                      }
+                      h5{
+                        font-size: 20px;
+                        color: $black;
+                        font-weight: 400;
+                        font-family: $font1;
+                        padding: 20px 0;
+                        text-transform: uppercase;
+                     }
+                     .profile__icon{
+                         ul{
+                             li{
+                                 display: inline-block;
+                                 padding: 0 10px;
+                                 a{
+                                    font-size: 24px;
+                                    color: $black;
+                                    display: inline;
+                                 }
+                             }
+                         }
+                     }
+                  }
+                  .profile_info{
+                      ul{
+                          li{
+                            padding: 10px 0;
+                              a{
+                                  font-size: 16px;
+                                  color: $black;
+                                  span{
+                                    padding-right: 10px;
+                                      i{
+                                          height: 35px;
+                                          width: 35px;
+                                          background-color: #e8f1f1;
+                                          border-radius: 50%;
+                                          text-align: center;
+                                          line-height: 35px;
+                                          color: $primaryColor;
+                                      }
+                                  }
+                              }
+                          }
+                      }
+                  }
+              }
+        }
+        .content_bottom{
+            padding-top: 40px;
+            display: flex;
+            justify-content: space-between;
+               .navBar{
+                   ul{ 
+                       li{
+                           display: inline-block;
+                           padding-right: 30px;
+                           a{
+                            font-size: 16px;
+                            color: $black;
+                            font-weight: 500;
+                            &:hover{
+                                color: $primaryColor;
+                            }
+                           }
+                       }
+                   }
+               }
+               .nav_btn{
+                   a{
+                       @include button;
+                   }
+               }
+        }
+    }
+}

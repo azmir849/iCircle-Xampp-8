@@ -1,0 +1,106 @@
+.language{
+    background-image: url(../images/languagebg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 130px 0;
+    position: relative;
+    z-index: 1;
+    &::before{
+        position: absolute; 
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.7);
+        z-index: -1;
+    }
+    .language_header{
+              span{
+                color: $white;
+                font-size: 48px;
+                font-weight: 700;
+                padding: 0 0 80px 0;
+                }
+               p{
+                color: $white;
+                font-size: 18px;
+                font-weight:  400;
+                padding: 40px 0 80px 0;
+                }
+    }
+    .cercle_title{
+     padding-top: 40px;
+      h4{
+        color: $white;
+        font-size: 30px;
+        font-weight:500;
+      }
+  }
+    .circle{
+        position: relative;
+        width: 114px;
+        height: 114px;
+        text-align: center;
+        margin: 0 auto;
+        svg {
+            width: 114px;
+            height: 114px;
+            .bg {
+                fill: none;
+                stroke-width: 11px;
+                stroke: $white; 
+              }
+              .progress {
+                fill: none;
+                stroke-width: 8px;
+                stroke: $primaryColor;
+                stroke-linecap: round;
+                stroke-dasharray: 384.56;
+                stroke-dashoffset: 60;
+                transform: rotate(-90deg);
+                transform-origin: 50% 50%;
+                animation: big 1.5s ease-in-out;
+              }
+              .english{
+                stroke-dasharray: 350.56; 
+              }
+              .hindi{
+                stroke-dasharray: 330.56; 
+              }
+              .freanch{
+                stroke-dasharray: 310.56; 
+              }
+              .arabic{
+                stroke-dasharray: 300.56; 
+              }
+          }
+          .text{
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            font-size: 26px;
+            color: $white;
+            text-align: center;
+            font-weight: 600;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+       } 
+      }  
+}
+
+
+@keyframes big {
+    from {
+      stroke-dashoffset: 326.56;
+    }
+    to {
+      stroke-dashoffset: 60;
+    }
+  }
+  

@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title id="tabName"></title>
+     <link rel="shortcut icon" href="favicon.ico" type="image/png">
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/all.min.css">
+     <link rel="stylesheet" href="css/aos.css">
+     <link rel="stylesheet" href="css/slick.css">
+     <link rel="stylesheet" href="css/style.min.css">
+     <link rel="stylesheet" href="css/responsive.css">
+
+     <!-- Import dynamic script from js -->
+     <script src="./js/dynamicScript.js"></script>
+
+</head>
+
+<body>
+<style>
+#more {
+     display: none;
+}
+.readBtn{
+     color: skyblue;
+      margin-top: -500px !important;
+      margin-bottom: 20px;
+}
+
+.list-element {
+    display: none;
+}
+#loadmore {
+    margin: 50px auto 0px;
+    display: table;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #1d7773;
+	outline: none;
+}
+.list-element:nth-child(1) {
+    display: block;
+}
+.list-element:nth-child(2) {
+    display: block;
+}
+.list-element:nth-child(3) {
+    display: block;
+}
+
+</style>
+     <!--          Header Part strat
+     *****************************************-->
+     <header>
+          <div class="header d-lg-block d-none">
+               <div class="container">
+                    <div class="header_wrapper">
+                         <div class="nav_list">
+                              <ul id="navBarList">
+                                 
+                              </ul>
+                         </div>
+                        
+                    </div>
+               </div>
+          </div>
+     </header>
+     <!--          Header Part End
+     *****************************************-->
+     <!-- Mobile Header Part -->
+     <section>
+          <div class="mob_header d-lg-none d-block">
+               <div class="container">
+                    <div class="row">
+                         <div class="col-lg-12 d-flex justify-content-end">
+                              <a href="#" class="moble_navbar d-block d-lg-none nav_toggol" data-bs-toggle="offcanvas"
+                                   data-bs-target="#offcanvasRight2" aria-controls="offcanvasRight2"> <i
+                                        class="fa-solid fa-bars"></i></a>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <!-- Mobile Header part ENd -->
+     <!--          Home Part strat
+     *****************************************-->
+     <section>
+          <div class="Home" id="home">
+               <div id="backgroundImg" class="home_wrapper">
+               </div>
+               <div class="container">
+                    <div class="home_content" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800">
+                         <div class="content_top">
+                              <div class="row">
+                                   <div class="col-lg-12">
+                                        <div class="content_wrap">
+                                             <div class="row">
+                                                  <div class="col-lg-7 d-flex d_list">
+                                                       <div class="profile">
+                                                            <img id="aboutImage" src="" alt="">
+                                                       </div>
+                                                       <div class="profile_description">
+                                                            <h4 id="fullName"></h4>
+                                                            <h5 id="userDesignation"></h5>
+                                                            <div class="profile__icon">
+                                                                 <ul id="socilaMediaIcons">
+
+                                                                 </ul>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-lg-5 d-flex justify-content-around">
+                                                       <div class="profile_info">
+                                                            <ul id="aboutDetails">
+
+                                                            </ul>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="content_bottom">
+                              <div class="navBar">
+                                   <ul id="headerNavbar">
+                                       
+                                   </ul>
+                              </div>
+                              <div class="nav_btn">
+                                   <a id="ResumeUrl" href="">Hire Me</a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!--          Home Part End
+     *****************************************-->
+
+     <!--          About Part Start
+     *****************************************-->
+     <section>
+          <div class="about" id="about" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2500">
+               <div class="container">
+                    <div class="about_wrapper">
+                         <div class="design">
+                              <img src="images/about_design.png" alt="">
+                         </div>
+                         <div class="design_3">
+                              <img src="images/about_design.png" alt="">
+                         </div>
+                         <div class="design_2"></div>
+                         <div class="row align-items-center">
+                              <div class="col-lg-5">
+                                   <div class="about_left">
+                                        <h2>About Me</h2>
+                                        <h3 id="aboutFullName"></h3>
+                                        <div id="homeUserAboutDiv" class="homeUserAboutDiv text-left ml-5 mr-5"></div>
+                                        <div class="text-left ml-5"><button class="readBtn text-left" onclick="myFunctionRead()" id="myBtn">Read more</button></div>
+                                        <div></div>
+
+                                        <div class="about_btn mt-3">
+                                             <a href="#">Learn More</a>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="col-lg-7">
+                                   <div class="about_right text-center">
+                                        <div class="about_img">
+                                             <img id="aboutProfileImage" src="images/about_png.png" alt="" width="50%" height="50%" style="border-radius: 10px;">
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!--          About Part End
+     *****************************************-->
+     <!--          Resume Part Start
+     *****************************************-->
+     <section>
+          <div class="resume" id="resume">
+               <div class="container">
+                    <div class="row">
+                         <div class="resume_wrapper">
+                              <div class="row">
+                                   <div id="experienceTitle" class="col-md-6 col-lg-6">
+                                        <div class="container_header text-center">
+                                             <h4> <span><i class="fa-solid fa-briefcase"></i> </span>Experience</h4>
+                                        </div>
+                                   </div>
+                                   <div  id="educationTitle" class="col-md-6 col-lg-6">
+                                        <div class="container_header text-center">
+                                             <h4> <span><i class="fa-solid fa-graduation-cap"></i></span>Education </h4>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div  class="row mb-5">
+                                   <div id="experienceFullCard" class="col-md-6 col-lg-6">
+                                        <div class="resume_container">
+                                             <div class="card_head">
+                                                  <h4> <span><i class="fa-solid fa-circle-dot"></i></span> </h4>
+                                                  <h6><span><i class="fa-solid fa-calendar-days"></i></span> </h6>
+                                             </div>
+                                             <h5></h5>
+                                             <p></p>
+                                        </div>
+                                   </div>
+                                   <div id="educationSectionData" class="col-md-6 col-lg-6">
+                                        <div class="resume_container">
+                                             <div class="card_head">
+                                                  <h4> <span><i class="fa-solid fa-circle-dot"></i></span> </h4>
+                                                  <h6><span><i class="fa-solid fa-calendar-days"></i></span> </h6>
+                                             </div>
+                                             <h5></h5>
+                                             <p> </p>
+                                        </div>
+                                   </div>
+                                 
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!--          Resume Part End
+     *****************************************-->
+     <!--          Skill Part Start
+     *****************************************-->
+     <section id="skillSection">
+          <section>
+               <div class="skill" id="skill" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+                    <div class="container">
+                         <div class="row">
+                              <div class="skill_wrapper">
+                                   <div class="row align-items-center">
+                                        <div id="skillPhotoVideo" class="col-md-12 col-lg-6">
+                                             <div class="skill_image">
+                                                  <div id="skillVideo" class="skill_play">
+                                                       <a href="#"> <i class="fa-solid fa-play"></i></a>
+                                                  </div>
+                                                  <div id="skillPhoto" class="row">
+                                                       <div class="col-lg-12">
+                                                            <div class="skill_img1">
+                                                                 <img src="images/skill1.png" alt="">
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+
+                                        <div class="col-md-12 col-lg-6">
+                                             <div class="skill_content wow slideInRight" data-wow-duration="1.5s"
+                                                  data-wow-delay=".1s">
+                                                  <span style="color: #1d7773; font-size: 32px; font-weight:bold">My Skills</span>
+
+                                             <div id="skillsId">
+                                                  
+                                             </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+     </section>
+     <!--          Skill Part  End
+     *****************************************-->
+     <!--          Service Part  Start
+     *****************************************-->
+     <section id="serviceSection">
+          <div class="service" id="serivce">
+               <div class="container">
+                    <div class="row">
+                         <div class="col-lg-12">
+                              <div class="service_head text-center">
+                                   <h4>Services</h4>
+                                   <h5>The Services I’m Providing</h5>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="service_wrapper">
+                         <div id="servicesId" class="row">
+                              
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!--          Service Part  End
+     *****************************************-->
+     <!--          Client Part  Start
+     *****************************************-->
+     <section id="clientAndTestimonial">
+          <div class="client" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2500">
+               <div class="container">
+                    <div class="section_header">
+                         <div class="row">
+                              <div class="col-lg-12 text-center">
+                                   <h4>CLIEaNTS <span>FEEDBACK</span></h4>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="client_wrapper">
+                         <div class="row align-content-center">
+                              <!-- <div class="col-lg-3"> -->
+                                   <!-- <div class="img_eliment">
+                                        <div class="img_1">
+                                             <img src="Images/c1.png" alt="">
+                                        </div>
+                                        <div class="img_2">
+                                             <img src="Images/c2.png" alt="">
+                                        </div>
+                                        <div class="img_3">
+                                             <img src="Images/c3.png" alt="">
+                                        </div>
+                                        <div class="img_4">
+                                             <img src="Images/c-p.png" alt="">
+                                        </div>
+                                        <div class="img_5">
+                                             <img src="Images/c1.png" alt="">
+                                        </div>
+                                        <div class="img_6">
+                                             <img src="Images/c2.png" alt="">
+                                        </div>
+                                        <div class="img_7">
+                                             <img src="Images/c3.png" alt="">
+                                        </div>
+                                        <div class="img_8">
+                                             <img src="Images/c-p.png" alt="">
+                                        </div>
+                                   </div> -->
+                              <!-- </div> -->
+                              <div class="col-lg-12">
+                                   <div id="sliderId" class="client_wrap">
+                                        <!-- <div class="slider_item">
+                                             <div class="text_item">
+                                                  <p>Talented UX designer with 7+ years of experience, seeking to
+                                                       elevate UI/UX at ABC, Inc. As Lead UI/UX Head completed project
+                                                       before dead line. ittis augue, id sollicitudin justo tristique
+                                                       ut. Nullam ex enim </p>
+                                                  <p> Duis aute irure dolor in reprehenderit dolore eu fugiat nulla
+                                                       pariatur sint occaecat cupidata non proident nostrum.</p>
+                                             </div>
+                                             <div class="client_profile text-center">
+                                                  <div class="profile_img">
+                                                       <img src="images/client_profile.png" alt="">
+                                                  </div>
+                                                  <div class="client_info">
+                                                       <h4>Alex Regelman</h4>
+                                                       <h5>Co-founder, Colabrio</h5>
+                                                  </div>
+                                             </div>
+                                        </div> -->
+                                       
+
+                                   </div>
+                              </div>
+                              <!-- <div class="col-lg-3"></div> -->
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!--          Client Part  End
+     *****************************************-->
+     <!--          Language Part Start
+     *****************************************-->
+     <section id="languageSection">
+          <div class="language" id="language">
+               <div class="container">
+                    <div class="row">
+                         <div class="col-lg-12">
+                              <div class="language_header text-center">
+                                   <span>Language</span>
+                                   <p>I know various types of language, i have good skill in writing, reading, speaking
+                                        and understanding</p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="row justify-content-center" id="languageId">
+                        
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!--          Language Part End
+     *****************************************-->
+     <!--          Portfolio Part Start
+     *****************************************-->
+     <section id="portfolioSection">
+          <div class="portfolio" id="portfolio">
+               <div class="container">
+                    <div class="section_header">
+                         <div class="row">
+                              <div class="col-lg-12 mb-5">
+                                   <h4>My <span>Portfolio</span></h4>
+                              </div>
+                         </div>
+                    </div>
+                    <div  class="portfolio_wrapper">
+                         <div id="portfolioCards"  class="row port_slider">
+                         
+                         </div>
+                         
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!--          POrtfolio Part End
+     *****************************************-->
+     <!--          News Part  Start
+     *****************************************-->
+     <section id="blogSection">
+          <div class="news">
+               <div class="container">
+                    <div class="section_header">
+                         <div class="row">
+                              <div class="col-lg-12 text-center">
+                                   <h4>Latest <span>News</span></h4>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="row">
+                         <div class="news_wrapper">
+                              <div id="blogId" class="row">
+         
+                              </div>
+                         </div>
+                    </div>
+                    	<!-- Load More Button -->
+					<button id="loadmore">Load More...</button>
+               </div>
+          </div>
+     </section>
+     <!--          News Part  End
+     *****************************************-->
+     <!--          Appointment Part  Start
+     *****************************************-->
+     <section id="appointmentSection">
+          <div class="appointment" id="appointment">
+               <div class="container">
+                    <div class="appointment_wrapper">
+                         <div class="row">
+                              <div class="col-md-9 col-lg-6">
+                                   <h4>Make an Appointment</h4>
+                                   <p>My best services will make your business easy. Sed perspiciatis unde omnis natus
+                                        voluptatem accusantie doloremue laudantium totam aperiam.</p>
+                                   <div class="row pt-4">
+                                        <div class="col-lg-6">
+                                             <div class="form_wrapper">
+                                                  <form action="#">
+                                                       <input class="form_control" type="text" placeholder="Full Name">
+                                                  </form>
+                                             </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                             <div class="form_wrapper">
+                                                  <form action="#">
+                                                       <input class="form_control" type="text"
+                                                            placeholder="E-mail Address">
+                                                  </form>
+                                             </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                             <div class="form_wrapper">
+                                                  <form action="#">
+                                                       <input class="form_control" type="text" placeholder="Phone No">
+                                                  </form>
+                                             </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                             <div class="form_wrapper">
+                                                  <form action="#">
+                                                       <input class="form_control" type="text"
+                                                            placeholder="Select Department">
+                                                  </form>
+                                             </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                             <div class="form_wrapper">
+                                                  <form action="#">
+                                                       <input class="form_control" type="text" placeholder="MM/DD/YY">
+                                                  </form>
+                                             </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                             <div class="form_wrapper">
+                                                  <form action="#">
+                                                       <input class="form_control" type="text"
+                                                            placeholder="Apointment Time">
+                                                  </form>
+                                             </div>
+                                        </div>
+
+                                        <div class="col-lg-12 text-end mt-5">
+                                             <a href="#"> <span><i class="fa-solid fa-calendar-days"></i></span>
+                                                  Appointment </a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!--          Appointment Part  End
+     *****************************************-->
+     <!--          Award Part  Start
+     *****************************************-->
+     <section id="awardSection">
+          <div class="award">
+               <div class="container">
+                    <div class="section_header">
+                         <div class="row">
+                              <div class="col-lg-12 text-center">
+                                   <h4>My <span>Award</span></h4>
+                                   
+                              </div>
+                         </div>
+                    </div>
+                    <div class="award_wrapper">
+                         <div id="awardId" class="row">
+                  
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!--          Award Part  End
+     *****************************************-->
+     <!--          Contact  Part  Start
+     *****************************************-->
+     <section>
+          <div class="contact" id="contact">
+               <div class="container">
+                    <div class="contact_wrapper">
+                         <div class="row">
+                              
+                              <div class="col-lg-12 p-0">
+                                   <div class="contact_inner">
+                                        <h3>Get in<span>Touch</span></h3>
+                                        <p>My best services will make your business easy. Sed perspiciatis unde omnis
+                                             natus voluptatem accusantie doloremue laudantium totam aperiam.</p>
+                                        <div class="row">
+                                             <div class="col-12 col-lg-12">
+                                                  <div class="form_wrapper">
+                                                       <form action="#">
+                                                            <input class="form_control" type="text"
+                                                                 placeholder="Your Name">
+                                                       </form>
+                                                  </div>
+                                             </div>
+                                             <div class="col-12  col-lg-6">
+                                                  <div class="form_wrapper">
+                                                       <form action="#">
+                                                            <input class="form_control" type="text" placeholder="Email">
+                                                       </form>
+                                                  </div>
+                                             </div>
+                                             <div class="col-12  col-lg-6">
+                                                  <div class="form_wrapper">
+                                                       <form action="#">
+                                                            <input class="form_control" type="text" placeholder="Phone">
+                                                       </form>
+                                                  </div>
+                                             </div>
+                                             <div class="col-12  col-lg-12">
+                                                  <div class="form_wrapper">
+                                                       <form action="#">
+                                                            <input class="form_control massage" type="text"
+                                                                 placeholder="Massage">
+                                                       </form>
+                                                  </div>
+                                             </div>
+                                             <div class="col-lg-12 text-end">
+                                                  <div class="contact_btn">
+                                                       <a href="#">Send Massage</a>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!--          Contact Part  End
+     *****************************************-->
+     <!--          Footer Part Start
+     *****************************************-->
+     <section>
+          <!-- <div class="footer">
+               <div class="container">
+                    <div class="footer_wrapper">
+                         <div class="row">
+                              <div class="col-sm-12 col-lg-4">
+                                   <h3>Abhout <Span>Me</Span></h3>
+                                   <p>Donec imperdiet risus at tortor consequat maximus et eget magna. The Cras ornare
+                                        sagittis augue, id sollicitudin justo tristique</p>
+                                   <p> A Private Limited is the most popular type of partnership Malta. The limited
+                                        liability is, in fact, the only type of company.allowed by Companies.</p>
+                              </div>
+                              <div class="col-sm-4 col-lg-2">
+                                   <h3>My <Span>Service</Span></h3>
+                                   <h4>Web Design</h4>
+                                   <h4>Print Design</h4>
+                                   <h4>Branding</h4>
+                                   <h4>User Research</h4>
+                                   <h4>Web Development</h4>
+                              </div>
+                              <div class="col-sm-4 col-lg-3">
+                                   <h3>Quick <Span>Links</Span></h3>
+                                   <h4> Privacy policy</h4>
+                                   <h4>Sitemap</h4>
+                                   <h4>Sitemap</h4>
+                                   <h4>Terms & Conditions</h4>
+                                   <h4>Contact</h4>
+                              </div>
+                              <div class="col-sm-4 col-lg-3">
+                                   <h3>Instragram <span>Feeds</span></h3>
+                                   <div class="fotter_img">
+
+                                        <img src="images/newss2.png" alt="">
+                                        <img src="images/newss2.png" alt="">
+                                        <img src="images/newss2.png" alt="">
+                                        <img src="images/newss2.png" alt="">
+                                        <img src="images/newss2.png" alt="">
+                                        <img src="images/newss2.png" alt="">
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div> -->
+          <div class="copy_right">
+               <div class="container">
+                    <div class="row">
+                         <div class="col-lg-12 text-center" id="footer">
+                              <h4>© 2022, Tony OBER. All Rights Reserved.</h4>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <!--       Footer Part End
+     *****************************************-->
+   <!--         NAv Offcan Part Start
+     *****************************************-->
+     <section>
+          <div class="navbar_toggoler">
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight2" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                       <img src="images/bmana.png" alt="">
+                    <h5 id="offcanvasRightLabel">
+                    </h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div class="nav_list">
+                         <div class="dropdown">
+                              <a href="#" class="js-link">Menu List<i class="fa fa-chevron-down"></i></a>
+                              <ul id="navMenuList" class="js-dropdown-list">
+                                   <li> <a href="#home">Home</a> </li>
+                                   <li> <a href="#about">About</a> </li>
+                                   <li> <a href="#resume">Resume</a> </li>
+                                   <li> <a href="#skill">Skill</a> </li>
+                                   <li> <a href="#serivce">Services</a> </li>
+                                   <li> <a href="#portfolio">Portfolio</a> </li>
+                                   <li> <a href="#award">Blog</a> </li>
+                                   <li> <a href="#contact">content</a> </li>
+                              </ul>
+                         </div>
+                    </div>
+                 </div>
+               </div>
+          </div>
+</section>
+<!--         NAv Offcan Part Start
+     *****************************************-->
+
+     <!--          BackToTop Part Start
+     *****************************************-->
+     <a href="#" class="backtotop"></a>
+
+     <!--          BackToTop Part End
+     *****************************************-->
+     <!--
+         Javascript Script Linker Part
+    [][][][][][[][][][][][[][][][][][][][][][][]-->
+     <script src="js/jquery-1.12.4.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.countup.min.js"></script>
+     <script src="js/jquery.waypoints.min.js"></script>
+     <script src="js/aos.js"></script>
+     <script src="js/slick.min.js"></script>
+     <script src="js/custom.js"></script>
+
+     <script>
+          function myFunctionRead() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+          
+            if (dots.style.display === "none") {
+              dots.style.display = "inline";
+              btnText.innerHTML = "Read more"; 
+              moreText.style.display = "none";
+            } else {
+              dots.style.display = "none";
+              btnText.innerHTML = "Read less"; 
+              moreText.style.display = "inline";
+            }
+          }
+</script>
+<script>
+     const loadmore = document.querySelector('#loadmore');
+          let currentItems = 3;
+          loadmore.addEventListener('click', (e) => {
+               const elementList = [...document.querySelectorAll('.list-element')];
+               for (let i = currentItems; i < currentItems + 3; i++) {
+                    if (elementList[i]) {
+                         elementList[i].style.display = 'block';
+                    }
+               }
+               currentItems += 3;
+     
+               // Load more button will be hidden after list fully loaded
+               if (currentItems >= elementList.length) {
+                    event.target.style.display = 'none';
+               }
+          })
+</script>
+
+
+</body>
+
+</html>

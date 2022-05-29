@@ -1,0 +1,87 @@
+.resume{
+    padding: 130px 0;
+    background-color: $bg;
+    .resume_header{
+       h4{
+        font-size: 48px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $black;
+        letter-spacing: 1px;
+        span{
+           color: $primaryColor;
+        }
+       }
+       p{
+        font-size: 16px;
+        font-weight: 400;
+        color: $text; 
+        line-height: 26px;  
+        padding: 20px 250px;
+       }
+
+       }
+    }
+    .resume_wrapper{
+           .container_header{
+               padding: 48px 0 8px 0; 
+               h4{
+                font-size: 24px;
+                font-weight: 500;
+                color: $black;
+                letter-spacing: 1px;
+                span{
+                   color: $primaryColor;
+                   padding-right: 10px;
+                } 
+               }
+           }
+           .resume_container{
+               margin-top: 40px;
+               padding: 25px 30px 11px 30px;
+               background-color: #ffffff;
+               box-shadow: 1px 1.732px 10px 0px #0000004d;
+               border-radius: 10px;
+               -webkit-border-radius: 10px;
+               -moz-border-radius: 10px;
+               -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                position: relative;
+                &:hover h4 span{
+                    color: $primaryColor;
+                }
+          .card_head{
+              display: flex;
+              justify-content: space-between;
+            h4{
+                color: $black;
+                font-size: 22px;
+                font-weight: 600;
+                span{
+                    padding-right: 10px;
+                }
+               }
+            h6{
+                color: $black;
+                font-size: 16px;
+                font-weight: 400;
+                font-family: $font1;
+                span{
+                    padding-right: 10px;
+                    color: $primaryColor;
+                }
+               }
+          }
+               h5{
+                color: $primaryColor;
+                font-size: 18px;
+                font-weight: 500;
+                padding: 15px 0 15px 0;
+               }
+               p{
+                color: $black;
+                font-size: 16px;
+                line-height: 24px;
+               }
+           }
+}

@@ -1,0 +1,116 @@
+.portfolio{
+    padding-top: 130px ;
+    .section_header{
+        padding-top: 13px;
+         h4{
+            font-size: 48px;
+            font-weight: 700;
+            color: $black;
+            line-height: 36px;
+            text-transform: uppercase;
+            span{
+                color: $primaryColor;
+            }
+         }
+         p{
+            font-size: 16px;
+            font-weight: 400;
+            color: $text;
+            line-height: 26px;
+            padding: 30px 0;
+         }
+    }
+    .portfolio_wrapper{
+         .port_slider{
+             position: relative;
+             .prev{
+                 font-size: 30px;
+                 height: 50px;
+                 width: 50px;
+                 background-color: rgb(201, 229, 234);
+                 color: $primaryColor;
+                 text-align: center;
+                 line-height: 50px;
+                 border-radius: 50%;
+                 cursor: pointer;
+                 &:hover{
+                     background-color: $primaryColor;
+                     color: $white;
+                 }
+             }
+             .next{
+                font-size: 30px;
+                height: 50px;
+                width: 50px;
+                background-color: rgb(201, 229, 234);
+                color: $primaryColor;
+                text-align: center;
+                line-height: 50px;
+                border-radius: 50%;
+                cursor: pointer;
+                &:hover{
+                    background-color: $primaryColor;
+                    color: $white;
+                }
+                position: absolute;
+                top: 0;
+                left: 80px;
+            }
+                .port_img{
+                    position: relative;
+                    margin: 40px 20px 10px 10px;
+                    &:hover .portfolio_overly{
+                        opacity: 1;
+                        transition: all linear .4s;
+                    } 
+                    img{
+                        width: 100%;
+                        border-radius: 10px;
+                    }
+                    .portfolio_overly{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width:100%;
+                        background-color: rgba(0,0,0,0.6); 
+                        border-radius: 10px;
+                         -webkit-border-radius: 10px;
+                         -moz-border-radius: 10px;
+                         -ms-border-radius: 10px;
+                         -o-border-radius: 10px;
+                         opacity: 0;
+                         span{
+                             i{
+                                 font-size: 20px;
+                                 color: $white;
+                                 padding: 10px 10px;
+                                 background-color: $primaryColor;
+                                 border-radius: 50%;
+                                 -webkit-border-radius: 50%;
+                                 -moz-border-radius: 50%;
+                                 -ms-border-radius: 50%;
+                                 -o-border-radius: 50%;
+                                 position: absolute;
+                                 top: 10%;
+                                 right: 10%;
+                              }
+                         }
+                         h4{
+                             font-size: 24px;
+                             color: $white;
+                             font-weight: 600;
+                             position: absolute;
+                             bottom:10%;
+                             left: 50%;
+                             transform: translateX(-50%);
+                             -webkit-transform: translateX(-50%);
+                             -moz-transform: translateX(-50%);
+                             -ms-transform: translateX(-50%);
+                             -o-transform: translateX(-50%);
+     }
+                 }
+                }
+         }
+    }
+}
